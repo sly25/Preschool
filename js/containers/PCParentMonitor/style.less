@@ -1,0 +1,132 @@
+.PCMonitorContainer {
+  background: url("/img/shan.png");
+  background-size:100%;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  ul{
+    float: right;
+  }
+  .sidebar {
+    width: 100px;
+    height: 200px;
+    //background: transparent;
+    border-radius: 0 200px 200px 0;
+    border: 1px solid white;
+    margin-top: 227px;
+    position: relative;
+    border-left: none;
+    .kongxin {
+      width: 30px;
+      height: 60px;
+      background: #eee;
+      z-index: 9;
+      border-radius: 0 60px 60px 0;
+      border: 1px solid white;
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      border-left: none;
+      margin: auto;
+    }
+    p {
+      width: 100px;
+      height: 100px;
+      line-height: 80px;
+      font-size: 20px;
+      color: white;
+      text-indent: 15px;
+      margin: 0;
+    }
+    p:nth-child(1):hover{
+      border-radius: 0 100px 0 0;
+     }
+    p:nth-child(3):hover {
+      border-radius: 0 0 100px 0;
+    }
+    p:hover {
+      background: #eee;
+      color: #002140;
+    }
+    hr {
+      width: 85px;
+      position: absolute;
+      left: 30px;
+      top: 100px;
+      border: 0.5px solid white;
+    }
+  }
+  .videocontainer{
+    width: 700px;
+    height: 400px;
+    background: #002140;
+    position: absolute;
+    top: 145px;
+    left: 390px;
+    video{
+      width: 100%;
+      height: 100%;
+    }
+    webkit-animation: floatOut .7s .1s ease-out both 300ms 0 ease;
+    //-moz-animation: floatOut .7s .1s ease-out both 300ms 0 ease;
+    -ms-animation: floatOut .7s .1s ease-out both 300ms 0 ease;
+    //animation: floatOut .7s .1s ease-out both 300ms 0 ease;
+    -moz-animation: floatOut .7s .1s ease-out both;
+    -webkit-animation: floatOut .7s .1s ease-out both;
+    -o-animation: floatOut .7s .1s ease-out both;
+    -ms-animation: floatOut .7s .1s ease-out both;
+    animation: floatOut .7s .1s ease-out both;
+  }
+  .huikacontainer{
+    .ant-calendar-picker{
+      position:absolute;
+      top: 85px;
+      left: 635px;
+      webkit-animation: floatOut .7s .1s ease-out both 300ms 0 ease;
+      //-moz-animation: floatOut .7s .1s ease-out both 300ms 0 ease;
+      -ms-animation: floatOut .7s .1s ease-out both 300ms 0 ease;
+      //animation: floatOut .7s .1s ease-out both 300ms 0 ease;
+      -moz-animation: floatOut .7s .1s ease-out both;
+      -webkit-animation: floatOut .7s .1s ease-out both;
+      -o-animation: floatOut .7s .1s ease-out both;
+      -ms-animation: floatOut .7s .1s ease-out both;
+      animation: floatOut .7s .1s ease-out both;
+      display: inline-block;
+    }
+    .selecttitle{
+      position:absolute;
+      top: 85px;
+      left: 505px;
+      color: #002140;
+      font-size: 18px;
+      webkit-animation: floatOut .7s .1s ease-out both 300ms 0 ease;
+      //-moz-animation: floatOut .7s .1s ease-out both 300ms 0 ease;
+      -ms-animation: floatOut .7s .1s ease-out both 300ms 0 ease;
+      //animation: floatOut .7s .1s ease-out both 300ms 0 ease;
+      -moz-animation: floatOut .7s .1s ease-out both;
+      -webkit-animation: floatOut .7s .1s ease-out both;
+      -o-animation: floatOut .7s .1s ease-out both;
+      -ms-animation: floatOut .7s .1s ease-out both;
+      animation: floatOut .7s .1s ease-out both;
+    }
+  }
+}
+@keyframes floatOut {
+  0%{
+    -webkit-transform: translate(0,300px);
+    -moz-transform: translate(0,300px);
+    -ms-transform: translate(0,300px);
+    -o-transform: translate(0,300px);
+    transform: translate(0,300px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(0,0);
+    -moz-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    -o-transform: translate(0,0);
+    transform: translate(0,0);
+    opacity: 1;
+  }
+}

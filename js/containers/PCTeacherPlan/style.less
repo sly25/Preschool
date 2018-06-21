@@ -1,0 +1,284 @@
+.pcteacherplan{
+  overflow: auto;
+  .nav{
+    float: right;
+  }
+  .weekaims{
+    width: 100%;
+    overflow: auto;
+    margin-top: 50px;
+    display: inline-block;
+    .banyuan {
+      width: 100px;
+      height: 50px;
+      margin: 0 auto;
+      border-radius: 50px 50px 0 0;
+      background: #70c7d2;
+      text-align: center;
+      color: white;
+      line-height: 50px;
+    }
+    hr {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .plandiv{
+      width: 500px;
+      height: 200px;
+      //display: inline-block;
+      float: left;
+      background: #70c7d2;
+      margin-right: 15px;
+      margin-top: 15px;
+      color: white;
+      font-size: 18px;
+      text-align: center;
+      padding-top: 40px;
+    }
+    .d1,.d3{
+      margin-left: 130px;
+    }
+    .d1,.d4 {
+      background: #d28386;
+    }
+    .d2 {
+      background: #3e424e;
+    }
+    .plandiv:before {
+      content: '';
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 20px solid white;
+      position:absolute;
+      left: 375px;
+      top: 366px;
+    }
+    .plandiv:after {
+      content: '';
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-left: 20px solid #d28386;
+      position:absolute;
+      left: 627px;
+      top: 280px;
+    }
+    .d2:before {
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-left: 20px solid white;
+      left: 645px;
+      top: 280px;
+    }
+    .d2:after{
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 20px solid #3e424e;
+      left: 900px;
+      top:383px;
+    }
+    .d3:before {
+      border-bottom-color:#70c7d2;
+      top: 386px;
+    }
+    .d3:after{
+      border-right: 20px solid white;
+      border-left-width: 0;
+      left: 610px;
+      top: 505px;
+    }
+    .d4:before {
+      border-right: 20px solid #d28386;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-left-width: 0;
+      left: 625px;
+      top: 505px;
+    }
+    .d4:after{
+      border-top: 20px solid white;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      left: 900px;
+      top: 401px;
+    }
+  }
+  .weekplan {
+    width: 100%;
+    margin-top: 90px;
+    p:nth-child(1){
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 60px;
+    }
+    ul:nth-child(2){
+      list-style: none;
+      width: 60%;
+      margin: 0 auto;
+      li {
+        margin-bottom: 60px;
+        i {
+          font-size: 60px;
+          float: left;
+          margin-right:40px;
+        }
+      }
+      p:nth-child(2){
+        font-weight: bolder;
+        font-size: 20px;
+      }
+    }
+  }
+  .lastweek {
+    width: 75%;
+    margin: 80px auto 150px;
+    overflow: auto;
+    .title {
+      width: 100%;
+      height: 40px;
+      background: #f4f5f7;
+      font-size: 12px;
+      color: #b9babe;
+      text-indent: 2em;
+      border-radius: 10px 10px 0 0;
+      display: flex;
+      align-items: center;
+    }
+    .six{
+      width:355px;
+      height:355px;
+      background:white;
+      border:1px solid #b9babe;
+      border-radius:10px;
+      float:left;
+      margin-right:50px;
+      margin-left:20px;
+    }
+    .six select{
+      appearance:none;
+      -webkit-appearance:none;
+      -moz-appearance:none;
+      border:1px solid #b9babe;
+      border-radius: 0;
+      //background:url("image/select_down.png") no-repeat 90% 45%;
+      background-color:white;
+
+    }
+    .six select:nth-child(2){
+      width:65px;
+      margin-left:25px;
+    }
+    .six select:nth-child(3){
+      width:85px;
+      text-indent:2em;
+    }
+    .six select:nth-child(4){
+      width:75px;
+    }
+    .six input{
+      width:65px;
+      border:1px solid #b9babe;
+      border-radius: 0;
+      background-color:white;
+    }
+    .six hr{
+      width:305px;
+      height:1px;
+      margin:10px 25px 0;
+      background:#3e8bb5;
+      border:none;
+    }
+    .six table{
+      margin-left:25px;
+      width:86%;
+      font-size:12px;
+      border-collapse:separate;
+      border-spacing:0px 3px;
+    }
+    .six table th{
+      height:30px;
+      border-bottom:1px solid #b9babe;
+    }
+    .six table tbody td{
+      width:40px;
+      height:40px;
+      text-align:center;
+    }
+    .six p{
+      color:red;
+    }
+    .six span{
+      color:black;
+    }
+    .six .fes p{
+      color:black;
+    }
+    .six .fes span{
+      color:red;
+    }
+    .six .spe{
+      width:38px;
+      height:38px;
+      border:1px solid #e0cb52;
+    }
+    .six table td:hover{
+      width:38px;
+      height:38px;
+      border:1px solid #e0cb52;
+    }
+    .seven{
+      width:520px;
+      height:355px;
+      background:white;
+      border:1px solid #b9babe;
+      border-radius:10px;
+      float:left;
+    }
+    .seven .pm{
+      width:450px;
+      height:280px;
+      margin:15px 35px;
+      /*background:#298abe;*/
+      text-align:center;
+      border-right:1px solid #b9babe;
+      font-size:12px;
+    }
+    .seven .pm th,.seven .pm td{
+      border-left:1px solid #b9babe;
+      border-top:1px solid #b9babe;
+    }
+    .seven .pm tr td:nth-child(1){
+      width:65px;
+    }
+    .seven .pm tr td:nth-child(2){
+      width:90px;
+    }
+    .seven table td>div{
+      display:inline-block;
+      width:165px;
+      height:3px;
+      background:#b9babe;
+      position: relative;
+      left:3%;
+    }
+    .seven table td>div div{
+      width:140px;
+      height: 100%;
+      background:#81caed;
+    }
+    .seven table tr:nth-child(2) div div{
+      background:#eb6e55;
+    }
+    .seven table tr:nth-child(2){
+      background:#eee;
+    }
+    .seven table tr:nth-child(3) div div{
+      background:#ed8155;
+    }
+    .seven table tr:nth-child(4) div div{
+      background:#ef9c55;
+    }
+    .seven table tr:hover{
+      background:#eee;
+    }
+  }
+}

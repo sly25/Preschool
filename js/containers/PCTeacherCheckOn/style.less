@@ -1,0 +1,86 @@
+.teachercheckon {
+  overflow: auto;
+  //height:100%;
+  .nav {
+    float: right;
+  }
+  header{
+    text-align: center;
+    font-size: 20px;
+    margin: 30px auto 70px;
+    overflow: auto;
+    strong{
+      font-size: 30px;
+    }
+  }
+  .line {
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    left: 65%;
+    top: 0;
+    hr{
+      transform: rotate(90deg);
+      position: absolute;
+      border: 0.5px solid #A9A9A9;
+      left:-110%;
+      //color: rgb(128,128,128);
+    }
+    hr:nth-child(1) {
+      width: 400px;
+    }
+    hr:nth-child(3) {
+      width: 800px;
+      top: 780px;
+      left: -310px;
+    }
+    hr:nth-child(5){
+      width: 1300px;
+      top: 2010px;
+      left: -560px;
+    }
+    .imgcontainer {
+      width: 180px;
+      height: 180px;
+      border-radius: 90px;
+      position:absolute;
+      top: 200px;
+      .zhezhaoceng,img {
+        background: rgba(	245,245,245,0.6);
+        width: 100%;
+        height: 100%;
+        position:absolute;
+        border-radius: 90px;
+        text-align: center;
+        font-size: 30px;
+        line-height: 180px;
+        color: #696969;
+      }
+    }
+    .img2 {
+      top: 1180px;
+      .zhezhaoceng,img {
+        background: rgba(245, 245, 245, 0);
+      }
+    }
+  }
+  .dagougou {
+    width: 400px;
+    //height: 800px;
+    //background: #002140;
+    margin-left: 470px;
+    ul:nth-child(3){
+      margin-top: 190px;
+    }
+    button {
+      margin-left: 200px;
+      margin-top: 30px;
+    }
+  }
+  .fuzelaoshi{
+    margin-left: 200px;
+    margin-top: 90px;
+    font-size: 16px;
+    color: #A9A9A9;
+  }
+}

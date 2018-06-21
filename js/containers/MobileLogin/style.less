@@ -1,0 +1,89 @@
+.mobilelogin{
+  width: 100%;
+  height: 100%;
+  .beijing {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .nav {
+    float: right;
+  }
+  .zhezhaoceng {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(211,211,211,0.5);
+  }
+  .loginpage {
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    input {
+      width: 80%;
+      margin-bottom: 35px;
+      height: 50px;
+      border: none;
+      border-radius: 25px;
+      outline: none;
+      background: #5080a5;
+      box-shadow: 0 0 15px #eee;
+      text-indent: 35px;
+    }
+    ::-webkit-input-placeholder{
+      color: rgba(0,0,0,0.5);
+    }
+    button {
+      width: 75%;
+      height:50px;
+      border: 1px solid white;
+      background: white;
+      color: white;
+      //margin-left: 25px;
+      border-radius: 10px;
+      outline: none;
+      background: transparent;
+    }
+    i {
+      font-size: 40px;
+      color: white;
+    }
+    .small {
+      font-size: 16px;
+      position: relative;
+      left: 25px;
+    }
+    p {
+      font-size: 20px;
+      color: white;
+    }
+  }
+  .backtohome:after {
+     border-right-color: #0c6391;
+   }
+}
+.backtohome {
+  position: fixed;
+  top: 15px;
+  left: 10px;
+}
+.backtohome:before,.backtohome:after {
+  content: ' ';
+  border: 10px solid transparent;
+  border-right: 10px solid white;
+  width: 0;
+  height: 0;
+  position:absolute;
+  top: 4px;
+  left: -4px;
+}
+.backtohome:after {
+  border-right-color: white;
+  left: -2px;
+}

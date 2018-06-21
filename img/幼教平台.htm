@@ -1,0 +1,2330 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://localhost:8080/parent/monitor -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>幼教平台</title>
+    <link rel="stylesheet" media="screen" href="./幼教平台_files/antd.css">
+    <link rel="stylesheet" media="screen" href="./幼教平台_files/style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <script type="text/javascript" src="./幼教平台_files/api"></script><script type="text/javascript" src="./幼教平台_files/getscript"></script><link rel="stylesheet" type="text/css" href="./幼教平台_files/bmap.css">
+<style type="text/css">* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  /*background:black;*/
+}
+header {
+  width: 100%;
+  height: 60px;
+  /*background:black;*/
+  position: relative;
+}
+#logo {
+  width: 230px;
+  /*background:white;*/
+  height: 55px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 5.3%;
+  float: left;
+}
+#logo i {
+  float: left;
+  font-size: 30px;
+  height: 100%;
+  margin-top: 15px;
+  color: #e65253;
+}
+#logo p {
+  float: left;
+  font-size: 20px;
+  font-family: "Microsoft YaHei";
+  margin-top: 20px;
+  margin-left: 10px;
+}
+header ul {
+  /*background:white;*/
+  height: 100%;
+  margin: 0;
+  float: right;
+  line-height: 58px !important;
+}
+header nav ul li {
+  list-style: none;
+  text-decoration: none;
+  float: left;
+  font-size: 14px;
+  margin: 16px 26px 0 0;
+  display: block;
+  height: 68%;
+  width: 12%;
+  text-align: center;
+}
+header nav ul .changecolor {
+  color: #e65253;
+}
+header nav ul .first {
+  border-bottom: 3px solid #e65253;
+}
+.one {
+  width: 100%;
+  height: 910px;
+  /*background:#e65235;*/
+}
+.one .top {
+  width: 100%;
+  height: 700px;
+  /*background:white;*/
+  /*background:url("image/bg1.png");*/
+  position: relative;
+}
+.one .top img {
+  width: 100%;
+  height: 700px;
+  position: absolute;
+  z-index: -1;
+}
+.omiddle {
+  position: relative;
+  left: 10%;
+  top: 30%;
+  width: 90%;
+}
+.fword {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 62px;
+}
+.sword {
+  color: white;
+  font-size: 22px;
+}
+.one .top input {
+  width: 335px;
+  height: 63px;
+  background: #e65253;
+  color: white;
+  border: none;
+  font-size: 32px;
+  margin-top: 68px;
+  outline: none;
+}
+.middle {
+  width: 100%;
+  height: 250px;
+}
+.desc {
+  float: left;
+  margin: auto 0;
+  width: 25%;
+  text-align: center;
+}
+.desc p {
+  color: #a2a2a2;
+  font-size: 15px;
+  margin: 0 auto;
+}
+.desc i {
+  font-size: 40px;
+  color: #e65253;
+  margin: 43px auto;
+  float: left;
+  width: 100%;
+}
+.desone p,
+.destwo p,
+.desthree p {
+  border-right: 2px solid #a2a2a2;
+  height: 50px;
+  margin-top: 125px;
+}
+</style><style type="text/css">.nav li:hover {
+  border-color: #e65253 !important;
+}
+.nav li:hover a {
+  color: #e65253 !important;
+}
+.nav li:hover span {
+  color: #e65253 !important;
+}
+.nav li i {
+  color: #e65253;
+  font-size: 16px;
+}
+</style><style type="text/css">.PCDocument {
+  width: 100%;
+  background: #0f0f0f;
+  overflow: auto;
+}
+.PCDocument .pcdocument {
+  width: 100%;
+  height: 650px;
+  color: white;
+  padding: 100px 180px;
+}
+.PCDocument .pcdocument .slogen {
+  width: 70px;
+  font-size: 22px;
+  float: left;
+  border: 3px solid white;
+  padding: 10px;
+}
+.PCDocument .pcdocument .youeryuanname {
+  text-align: right;
+  font-size: 18px;
+}
+.PCDocument .pcdocument hr {
+  width: 40px;
+  position: relative;
+  left: 830px;
+  border: 1px solid white;
+  margin: 40px 0 80px;
+}
+.PCDocument .pcdocument .jianjie {
+  width: 300px;
+  text-indent: 2em;
+  display: inline-block;
+  position: relative;
+  top: 60px;
+}
+.PCDocument .pcdocument .yey {
+  width: 450px;
+  height: 300px;
+  position: relative;
+  left: 170px;
+}
+.PCDocument .white {
+  width: 95%;
+  margin: 80px auto 130px;
+  background: #fffeff;
+  padding: 40px 60px 60px;
+  overflow: auto;
+}
+.PCDocument .white .teacher .ourteachers {
+  font-size: 30px;
+  text-align: center;
+  color: #0f0f0f;
+}
+.PCDocument .white .teacher .oneteacher {
+  position: relative;
+  width: 258px;
+  height: 400px;
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #0f0f0f;
+}
+.PCDocument .white .teacher .oneteacher .teacherimg {
+  width: 100%;
+  height: 286px;
+  position: absolute;
+  top: 57px;
+  left: 0;
+}
+.PCDocument .white .teacher .oneteacher .teacherbp {
+  position: relative;
+  top: 355px;
+}
+.PCDocument .white .iw_poi_title {
+  color: #CC5522;
+  font-size: 14px;
+  font-weight: bold;
+  overflow: hidden;
+  padding-right: 13px;
+  white-space: nowrap;
+}
+.PCDocument .white .iw_poi_content {
+  font: 12px arial, sans-serif;
+  overflow: visible;
+  padding-top: 4px;
+  white-space: -moz-pre-wrap;
+  word-wrap: break-word;
+}
+.PCDocument .white #dituContent {
+  width: 1095px;
+  height: 230px;
+  border: #ccc solid 1px;
+}
+.PCDocument .white .address {
+  padding-top: 80px;
+  overflow: auto;
+  width: 100%;
+}
+.PCDocument .white .address p {
+  font-size: 18px;
+  color: #0f0f0f;
+  border: 2px solid #0f0f0f;
+  width: 80px;
+  margin: 50px auto 30px;
+}
+</style><style type="text/css">.jiaowuxinxiang {
+  overflow: auto;
+  background: #eee;
+  min-height: 100%;
+}
+.jiaowuxinxiang .nav {
+  float: right;
+}
+.jiaowuxinxiang .emailimgc {
+  width: 90%;
+  height: 250px;
+  margin: 80px auto 40px;
+  background: url('/img/heng.jpeg');
+  background-size: 100% 100%;
+  padding-top: 90px;
+}
+.jiaowuxinxiang .emailimgc p {
+  color: white;
+  text-indent: 100px;
+  font-size: 26px;
+}
+.jiaowuxinxiang .emailsuggest,
+.jiaowuxinxiang .emailtousu {
+  width: 90%;
+  height: 400px;
+  margin: 80px auto 40px;
+}
+.jiaowuxinxiang .emailsuggest .onep,
+.jiaowuxinxiang .emailtousu .onep {
+  font-size: 22px;
+}
+.jiaowuxinxiang .emailtousu {
+  height: 350px;
+  margin-top: 0;
+}
+.jiaowuxinxiang .footer_top {
+  width: 100%;
+  height: 300px;
+  background: #34373f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+.jiaowuxinxiang .footer_top div {
+  width: 60%;
+  height: 50%;
+}
+.jiaowuxinxiang .footer_top p:nth-child(1) {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.jiaowuxinxiang .footer_top p:nth-child(2) {
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+.jiaowuxinxiang .footer_top input:nth-child(3) {
+  width: 57%;
+  height: 20%;
+  border: none;
+  background: white;
+  color: #5b6767;
+  border-radius: 0;
+  position: relative;
+  left: 16%;
+  text-indent: 1em;
+}
+.jiaowuxinxiang .footer_top input:nth-child(4) {
+  width: 9%;
+  height: 20%;
+  border: none;
+  background: #6d6d75;
+  color: white;
+  border-radius: 0;
+  text-align: center;
+  position: relative;
+  left: 15%;
+}
+.jiaowuxinxiang .lianxiimg {
+  width: 200px;
+  height: 45px;
+}
+.jiaowuxinxiang .tousuc {
+  width: 100%;
+  height: 220px;
+  background: #34373f;
+  padding-top: 50px;
+}
+.jiaowuxinxiang .tousuc .xiaozhang,
+.jiaowuxinxiang .tousuc .xiaojing {
+  float: left;
+  width: 50%;
+  height: 120px;
+  position: relative;
+  color: white;
+}
+.jiaowuxinxiang .tousuc .xiaozhang p,
+.jiaowuxinxiang .tousuc .xiaojing p {
+  text-align: center;
+}
+.jiaowuxinxiang .tousuc .xiaozhang p:nth-child(2),
+.jiaowuxinxiang .tousuc .xiaojing p:nth-child(2) {
+  padding-top: 15px;
+}
+.jiaowuxinxiang .tousuc .xiaozhang i,
+.jiaowuxinxiang .tousuc .xiaojing i {
+  font-size: 50px;
+  position: absolute;
+  left: 120px;
+  top: 30px;
+}
+.jiaowuxinxiang .tousuc .xiaozhang {
+  border-right: 1px solid white;
+}
+</style><style type="text/css">.PClogin {
+  width: 100%;
+  height: 100%;
+}
+.PClogin .beijing {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.PClogin .nav {
+  float: right;
+}
+.PClogin .zhezhaoceng {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(211, 211, 211, 0.5);
+}
+.PClogin .loginpage {
+  width: 200px;
+  height: 350px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+}
+.PClogin .loginpage input {
+  margin-bottom: 15px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background: #5080a5;
+  box-shadow: 0 0 15px #eee;
+  text-indent: 35px;
+}
+.PClogin .loginpage ::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+.PClogin .loginpage button {
+  width: 80px;
+  height: 30px;
+  border: none;
+  background: white;
+  color: #191970;
+  border-radius: 10px;
+  outline: none;
+}
+.PClogin .loginpage i {
+  font-size: 40px;
+  color: white;
+}
+.PClogin .loginpage .small {
+  font-size: 16px;
+  position: relative;
+  left: 25px;
+}
+.PClogin .loginpage p {
+  font-size: 20px;
+  color: white;
+}
+</style><style type="text/css">.pcmaterial {
+  width: 100%;
+  height: 100%;
+  background: #eee;
+  overflow: auto;
+}
+.pcmaterial .nav {
+  float: right;
+}
+.pcmaterial .four {
+  width: 730px;
+  height: 500px;
+  background: white;
+  border: 1px solid #b9babe;
+  border-radius: 10px;
+  margin: 100px auto 0;
+  overflow: auto;
+}
+.pcmaterial .title {
+  width: 100%;
+  height: 40px;
+  background: #f4f5f7;
+  font-size: 12px;
+  color: #b9babe;
+  text-indent: 2em;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  align-items: center;
+}
+.pcmaterial .ant-tabs {
+  width: 80%;
+  margin: 20px auto;
+}
+.pcmaterial .ant-tabs-nav {
+  width: 100%;
+}
+.pcmaterial .ant-tabs-tab {
+  width: 19.6%;
+}
+.pcmaterial .ant-tabs-bar {
+  margin: 0;
+}
+.pcmaterial .sw {
+  width: 100%;
+  height: 320px;
+}
+.pcmaterial .caiming {
+  width: 30%;
+  float: left;
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 15px;
+  border-right: 1px solid #3e424e;
+  margin-bottom: 0;
+}
+.pcmaterial .caiming3 {
+  border: none;
+}
+</style><style type="text/css"></style><style type="text/css">.pcpayment {
+  height: 100%;
+  overflow: hidden;
+}
+.pcpayment header {
+  width: 100%;
+  height: 200px;
+}
+.pcpayment .jbxx,
+.pcpayment .xsjf {
+  width: 300px;
+  height: 200px;
+  float: left;
+  background: #1e1b1c;
+  margin-left: 20px;
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+}
+.pcpayment .jbxx h3,
+.pcpayment .xsjf h3 {
+  color: white;
+  margin-bottom: 30px;
+}
+.pcpayment .jbxx:after,
+.pcpayment .xsjf:after {
+  content: '';
+  border-left: 300px solid transparent;
+  border-bottom: 60px solid white;
+  position: absolute;
+  top: 140px;
+  left: 20px;
+}
+.pcpayment .xsjf {
+  height: 140px;
+  background: #e75021;
+}
+.pcpayment .xsjf a {
+  color: #001529;
+}
+.pcpayment .xsjf:after {
+  left: 340px;
+  top: 80px;
+}
+.pcpayment .pxsbxc {
+  overflow: hidden;
+  padding: 26px 0px 0px 15px;
+  width: 100%;
+}
+.pcpayment .pxsbxc .pxsbx {
+  width: 300px;
+  height: 160px;
+  float: left;
+  background: #232323;
+  -webkit-transform: skewY(-10deg);
+  -moz-transform: skewY(-10deg);
+  -o-transform: skewY(-10deg);
+  transform: skewY(-10deg);
+  margin-right: 15px;
+  margin-bottom: 30px;
+}
+.pcpayment .pxsbxc .twoheight {
+  height: 300px;
+}
+.pcpayment .pxsbxc .sf {
+  position: absolute;
+  top: 422px;
+}
+.pcpayment .pxsbxc .sf2 {
+  left: 330px;
+}
+.pcpayment .pxsbxc .sf3 {
+  position: relative;
+  top: -50px;
+}
+.pcpayment .pxsbxc .k8,
+.pcpayment .pxsbxc .k9,
+.pcpayment .pxsbxc .k10,
+.pcpayment .pxsbxc .k11 {
+  margin-bottom: 0px;
+}
+.pcpayment .pxsbxc .k1 {
+  background: #b9dae4;
+}
+.pcpayment .pxsbxc .k2 {
+  background: #e8bbae;
+}
+.pcpayment .pxsbxc .k3 {
+  background: url('/img/k3.jpeg');
+  text-align: right;
+}
+.pcpayment .pxsbxc .k3 ul {
+  -webkit-transform: skewY(10deg);
+  -moz-transform: skewY(10deg);
+  -o-transform: skewY(10deg);
+  transform: skewY(10deg);
+  list-style: none;
+  padding-top: 30px;
+  color: #FFD700;
+}
+.pcpayment .pxsbxc .k3 ul span {
+  font-size: 20px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+.pcpayment .pxsbxc .k3 ul li {
+  margin-bottom: 10px;
+  font-weight: lighter;
+}
+.pcpayment .pxsbxc .k3 ul a {
+  color: #FFD700;
+}
+.pcpayment .pxsbxc .k4 {
+  background: url('/img/k4.jpeg');
+  background-size: 100% 165%;
+}
+.pcpayment .pxsbxc .k5 {
+  background: url('/img/keai.jpeg');
+  background-size: 100%;
+}
+.pcpayment .pxsbxc .k6 {
+  background: url('/img/k6.jpeg');
+  background-size: 100% 170%;
+  text-align: center;
+  line-height: 180px;
+}
+.pcpayment .pxsbxc .k6 p {
+  -webkit-transform: skewY(10deg);
+  -moz-transform: skewY(10deg);
+  -o-transform: skewY(10deg);
+  transform: skewY(10deg);
+  font-size: 30px;
+  color: white;
+  margin-bottom: 0;
+}
+.pcpayment .pxsbxc .k6 a {
+  color: white;
+}
+.pcpayment .pxsbxc .k7 {
+  background: #9baaa5;
+}
+.pcpayment .pxsbxc .k7 p {
+  -webkit-transform: skewY(10deg);
+  -moz-transform: skewY(10deg);
+  -o-transform: skewY(10deg);
+  transform: skewY(10deg);
+  font-size: 25px;
+  color: #001529;
+  margin-bottom: 0;
+  text-align: center;
+  line-height: 150px;
+}
+.pcpayment .pxsbxc .k7 a {
+  color: #001529;
+}
+.pcpayment .pxsbxc .k8 {
+  background: #e3c3ad;
+}
+.pcpayment .pxsbxc .k9 {
+  background: url('/img/k9.jpeg');
+  background-size: 100%;
+}
+.pcpayment .pxsbxc .k10 {
+  background: url('/img/k10.jpeg');
+  background-size: 100%;
+}
+.pcpayment .pxsbxc .k11 {
+  background: url('/img/hua.jpg');
+  background-size: 100%;
+}
+</style><style type="text/css"></style><style type="text/css"></style><style type="text/css">.pctest {
+  overflow: auto;
+}
+.pctest .nav {
+  float: right;
+}
+.pctest section {
+  width: 80%;
+  margin: 100px auto;
+}
+</style><style type="text/css">.PCMonitorContainer {
+  background: url("/img/shan.png");
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+.PCMonitorContainer ul {
+  float: right;
+}
+.PCMonitorContainer .sidebar {
+  width: 100px;
+  height: 200px;
+  border-radius: 0 200px 200px 0;
+  border: 1px solid white;
+  margin-top: 227px;
+  position: relative;
+  border-left: none;
+}
+.PCMonitorContainer .sidebar .kongxin {
+  width: 30px;
+  height: 60px;
+  background: #eee;
+  z-index: 9;
+  border-radius: 0 60px 60px 0;
+  border: 1px solid white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  border-left: none;
+  margin: auto;
+}
+.PCMonitorContainer .sidebar p {
+  width: 100px;
+  height: 100px;
+  line-height: 80px;
+  font-size: 20px;
+  color: white;
+  text-indent: 15px;
+  margin: 0;
+}
+.PCMonitorContainer .sidebar p:nth-child(1):hover {
+  border-radius: 0 100px 0 0;
+}
+.PCMonitorContainer .sidebar p:nth-child(3):hover {
+  border-radius: 0 0 100px 0;
+}
+.PCMonitorContainer .sidebar p:hover {
+  background: #eee;
+  color: #002140;
+}
+.PCMonitorContainer .sidebar hr {
+  width: 85px;
+  position: absolute;
+  left: 30px;
+  top: 100px;
+  border: 0.5px solid white;
+}
+.PCMonitorContainer .videocontainer {
+  width: 700px;
+  height: 400px;
+  background: #002140;
+  position: absolute;
+  top: 145px;
+  left: 390px;
+  webkit-animation: floatOut 0.7s 0.1s ease-out both 300ms 0 ease;
+  -ms-animation: floatOut 0.7s 0.1s ease-out both 300ms 0 ease;
+  -moz-animation: floatOut 0.7s 0.1s ease-out both;
+  -webkit-animation: floatOut 0.7s 0.1s ease-out both;
+  -o-animation: floatOut 0.7s 0.1s ease-out both;
+  -ms-animation: floatOut 0.7s 0.1s ease-out both;
+  animation: floatOut 0.7s 0.1s ease-out both;
+}
+.PCMonitorContainer .videocontainer video {
+  width: 100%;
+  height: 100%;
+}
+.PCMonitorContainer .huikacontainer .ant-calendar-picker {
+  position: absolute;
+  top: 85px;
+  left: 635px;
+  webkit-animation: floatOut 0.7s 0.1s ease-out both 300ms 0 ease;
+  -ms-animation: floatOut 0.7s 0.1s ease-out both 300ms 0 ease;
+  -moz-animation: floatOut 0.7s 0.1s ease-out both;
+  -webkit-animation: floatOut 0.7s 0.1s ease-out both;
+  -o-animation: floatOut 0.7s 0.1s ease-out both;
+  -ms-animation: floatOut 0.7s 0.1s ease-out both;
+  animation: floatOut 0.7s 0.1s ease-out both;
+  display: inline-block;
+}
+.PCMonitorContainer .huikacontainer .selecttitle {
+  position: absolute;
+  top: 85px;
+  left: 505px;
+  color: #002140;
+  font-size: 18px;
+  webkit-animation: floatOut 0.7s 0.1s ease-out both 300ms 0 ease;
+  -ms-animation: floatOut 0.7s 0.1s ease-out both 300ms 0 ease;
+  -moz-animation: floatOut 0.7s 0.1s ease-out both;
+  -webkit-animation: floatOut 0.7s 0.1s ease-out both;
+  -o-animation: floatOut 0.7s 0.1s ease-out both;
+  -ms-animation: floatOut 0.7s 0.1s ease-out both;
+  animation: floatOut 0.7s 0.1s ease-out both;
+}
+@keyframes floatOut {
+  0% {
+    -webkit-transform: translate(0, 300px);
+    -moz-transform: translate(0, 300px);
+    -ms-transform: translate(0, 300px);
+    -o-transform: translate(0, 300px);
+    transform: translate(0, 300px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+</style><style type="text/css">.pcparentcheckon {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: url('/img/背景.jpeg');
+  background-size: 100%;
+}
+.pcparentcheckon .nav {
+  float: right;
+}
+.two {
+  width: 890px;
+  height: 60px;
+  margin: 100px auto 30px;
+  overflow: auto;
+}
+.two ul i {
+  float: left;
+  display: block;
+  margin-left: 4px;
+  width: 30px;
+  height: 50px;
+  background: white;
+  border: 0.3px solid #b9babe;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 10px;
+  font-weight: bolder;
+  line-height: 30px;
+}
+.two ul li {
+  display: block;
+  float: left;
+  margin-left: 4px;
+  width: 107px;
+  height: 50px;
+  background: white;
+  border: 0.3px solid #b9babe;
+  font-size: 10px;
+  text-align: center;
+  padding-top: 10px;
+  font-weight: bolder;
+}
+.two ul li span {
+  font-size: 18px;
+  color: #647283;
+  font-weight: bold;
+}
+.two ul li strong {
+  font-size: 14px;
+  color: #e96821;
+}
+.two ul li:nth-child(2):hover,
+.two ul li:nth-child(3):hover,
+.two ul li:nth-child(4):hover,
+.two ul li:nth-child(5):hover,
+.two ul li:nth-child(6):hover,
+.two ul li:nth-child(7):hover {
+  border-top: 3px solid #298abe;
+}
+.two ul li:nth-child(1),
+.two ul li:nth-child(8) {
+  width: 30px;
+}
+.two ul li:nth-child(1) img,
+.two ul li:nth-child(8) img {
+  width: 80%;
+  height: 50%;
+  position: relative;
+  top: 16%;
+  left: 10%;
+}
+.two ul li:nth-last-child(1) {
+  width: 130px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #647283;
+  border: none;
+  background: none;
+}
+.two ul li:nth-last-child(1) input {
+  height: 50px;
+  position: relative;
+  top: -10px;
+  border-radius: 0px;
+  border: 0.3px solid #b9babe;
+}
+.two ul li:nth-last-child(1) img {
+  position: relative;
+  left: 10%;
+  bottom: 10%;
+}
+.three {
+  width: 890px;
+  height: 100px;
+  margin: 20px auto 30px;
+  font-size: 10px;
+}
+.three li {
+  width: 197px;
+  height: 70px;
+  display: block;
+  float: left;
+  margin-right: 30px;
+  font-size: 8px;
+  background: white;
+}
+.three li p {
+  position: relative;
+  top: 20px;
+  left: 15px;
+  margin-bottom: 10px;
+}
+.three li span {
+  font-size: 6px;
+  color: #b9babe;
+  position: relative;
+  left: 15px;
+}
+.three li div {
+  width: 60px;
+  height: 45px;
+  position: relative;
+  left: 65%;
+  bottom: 68%;
+}
+.three li:nth-child(1) {
+  border-left: 3px solid #49b19f;
+}
+.three li:nth-child(1) div {
+  background: #49b19f;
+}
+.three li:nth-child(2) {
+  border-left: 3px solid #3e8bb5;
+}
+.three li:nth-child(2) div {
+  background: #3e8bb5;
+}
+.three li:nth-child(3) {
+  border-left: 3px solid #ce4d3d;
+}
+.three li:nth-child(3) div {
+  background: #ce4d3d;
+}
+.three li:nth-child(4) {
+  margin: 0;
+  border-left: 3px solid #e0cb52;
+}
+.three li:nth-child(4) div {
+  background: #e0cb52;
+}
+.five {
+  width: 880px;
+  height: 360px;
+  background: white;
+  border: 1px solid #b9babe;
+  border-radius: 10px;
+  margin: 20px auto 30px;
+}
+.five .title {
+  width: 100%;
+  height: 40px;
+  background: #f4f5f7;
+  font-size: 12px;
+  color: #b9babe;
+  text-indent: 2em;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  align-items: center;
+}
+.five .qingjiabiaoti {
+  width: 80%;
+  border: none;
+  background: none;
+}
+.five .tijiao {
+  width: 50px;
+  height: 25px;
+  background: #298abe;
+  color: white;
+  border: none;
+  position: relative;
+  left: 140px;
+  top: 3px;
+  border-radius: 5px;
+  margin-left: 460px;
+  outline: none;
+}
+.five .qingjiayuanyin {
+  border: none;
+  outline: none;
+  text-indent: 6px;
+}
+.five p:nth-child(2),
+.five p:nth-child(3),
+.five p:nth-child(4),
+.five p:nth-child(5) {
+  width: 480px;
+  height: 50px;
+  font-size: 12px;
+  font-weight: bolder;
+  line-height: 25px;
+  border-bottom: 1px solid #b9babe;
+  margin-left: 199px;
+  text-indent: 1em;
+  opacity: 0.7;
+  position: relative;
+}
+.five p:nth-child(2) input,
+.five p:nth-child(3) input,
+.five p:nth-child(4) input,
+.five p:nth-child(5) input {
+  outline: none;
+  position: relative;
+  top: 10px;
+}
+.five span {
+  font-size: 12px;
+  color: #b9babe;
+  position: relative;
+  top: 10px;
+}
+.five p:nth-child(3) {
+  width: 140px;
+  float: left;
+}
+.five p:nth-child(3) input {
+  width: 60%;
+}
+.five p:nth-child(4) {
+  overflow: auto;
+  width: 340px;
+}
+.five p:nth-child(3) {
+  border-right: 1px solid #b9babe;
+}
+.five p:nth-child(5) {
+  height: 145px;
+}
+</style><style type="text/css">.pcteacherchildxx {
+  overflow: auto;
+}
+.pcteacherchildxx .nav {
+  float: right;
+}
+.pcteacherchildxx .onetable,
+.pcteacherchildxx .twotable,
+.pcteacherchildxx .xinzengtable {
+  width: 100%;
+  overflow: auto;
+  background: #d7452e;
+}
+.pcteacherchildxx .onetable .banjiming,
+.pcteacherchildxx .twotable .banjiming,
+.pcteacherchildxx .xinzengtable .banjiming {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin: 20px auto;
+}
+.pcteacherchildxx .onetable .ant-table-wrapper,
+.pcteacherchildxx .twotable .ant-table-wrapper,
+.pcteacherchildxx .xinzengtable .ant-table-wrapper {
+  width: 80%;
+  margin: 20px auto 20px;
+}
+.pcteacherchildxx .twotable {
+  background: #91c4bd;
+}
+.pcteacherchildxx .xinzengtable {
+  background: white;
+}
+.pcteacherchildxx .xinzengtable .xinzengxinxi {
+  color: #002140;
+  font-size: 20px;
+  text-align: center;
+  margin: 20px auto;
+}
+.pcteacherchildxx .four_right {
+  width: 50%;
+  height: 400px;
+  margin: 0 auto 40px;
+  position: relative;
+}
+.pcteacherchildxx .four_right span {
+  position: absolute;
+  left: 20px;
+  top: 18px;
+  z-index: 9;
+}
+.pcteacherchildxx .four_right span:nth-child(3) {
+  left: 340px;
+}
+.pcteacherchildxx .four_right span:nth-child(6) {
+  top: 75px;
+}
+.pcteacherchildxx .four_right span:nth-child(8) {
+  top: 75px;
+  left: 340px;
+}
+.pcteacherchildxx .four_right span:nth-child(11) {
+  top: 130px;
+}
+.pcteacherchildxx .four_right span:nth-child(13) {
+  top: 175px;
+}
+.pcteacherchildxx .four_right input {
+  width: 47%;
+  height: 42px;
+  background: #ededef;
+  color: #5b6767;
+  opacity: 0.9;
+  border: none;
+  margin: 7px;
+  text-indent: 4em;
+}
+.pcteacherchildxx .four_right textarea {
+  width: 97%;
+  background: #ededef;
+  color: #5b6767;
+  opacity: 0.9;
+  border: none;
+  margin: 5px;
+  text-indent: 5em;
+}
+.pcteacherchildxx .four_right input:nth-last-child(1) {
+  width: 97%;
+  background: #ededef;
+  color: black;
+  opacity: 0.8;
+  border: none;
+  margin: 5px;
+  text-indent: 1em;
+  font-size: 14px;
+  font-weight: bolder;
+}
+</style><style type="text/css">.pcteacherparentxx {
+  overflow: auto;
+}
+.pcteacherparentxx .nav {
+  float: right;
+}
+.pcteacherparentxx .onetable,
+.pcteacherparentxx .twotable,
+.pcteacherparentxx .xinzengtable {
+  width: 100%;
+  overflow: auto;
+  background: #d7452e;
+}
+.pcteacherparentxx .onetable .banjiming,
+.pcteacherparentxx .twotable .banjiming,
+.pcteacherparentxx .xinzengtable .banjiming {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin: 20px auto;
+}
+.pcteacherparentxx .onetable .ant-table-wrapper,
+.pcteacherparentxx .twotable .ant-table-wrapper,
+.pcteacherparentxx .xinzengtable .ant-table-wrapper {
+  width: 80%;
+  margin: 20px auto 20px;
+}
+.pcteacherparentxx .twotable {
+  background: #91c4bd;
+}
+.pcteacherparentxx .xinzengtable {
+  background: white;
+}
+.pcteacherparentxx .xinzengtable .xinzengxinxi {
+  color: #002140;
+  font-size: 20px;
+  text-align: center;
+  margin: 20px auto;
+}
+.pcteacherparentxx .four_right {
+  width: 50%;
+  height: 400px;
+  margin: 0 auto 40px;
+  position: relative;
+}
+.pcteacherparentxx .four_right span {
+  position: absolute;
+  left: 20px;
+  top: 18px;
+  z-index: 9;
+}
+.pcteacherparentxx .four_right span:nth-child(3) {
+  left: 340px;
+}
+.pcteacherparentxx .four_right span:nth-child(6) {
+  top: 75px;
+}
+.pcteacherparentxx .four_right span:nth-child(8) {
+  top: 75px;
+  left: 340px;
+}
+.pcteacherparentxx .four_right span:nth-child(11) {
+  top: 130px;
+}
+.pcteacherparentxx .four_right span:nth-child(13) {
+  top: 130px;
+  left: 340px;
+}
+.pcteacherparentxx .four_right input:nth-child(2),
+.pcteacherparentxx .four_right input:nth-child(7),
+.pcteacherparentxx .four_right input:nth-child(9) {
+  text-indent: 6em !important;
+}
+.pcteacherparentxx .four_right input {
+  width: 47%;
+  height: 42px;
+  background: #ededef;
+  color: #5b6767;
+  opacity: 0.9;
+  border: none;
+  margin: 7px;
+  text-indent: 4em;
+}
+.pcteacherparentxx .four_right textarea {
+  width: 97%;
+  background: #ededef;
+  color: #5b6767;
+  opacity: 0.9;
+  border: none;
+  margin: 5px;
+  text-indent: 5em;
+}
+.pcteacherparentxx .four_right input:nth-last-child(1) {
+  width: 97%;
+  background: #ededef;
+  color: black;
+  opacity: 0.8;
+  border: none;
+  margin: 5px;
+  text-indent: 1em;
+  font-size: 14px;
+  font-weight: bolder;
+}
+</style><style type="text/css">.teachercheckon {
+  overflow: auto;
+}
+.teachercheckon .nav {
+  float: right;
+}
+.teachercheckon header {
+  text-align: center;
+  font-size: 20px;
+  margin: 30px auto 70px;
+  overflow: auto;
+}
+.teachercheckon header strong {
+  font-size: 30px;
+}
+.teachercheckon .line {
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  left: 65%;
+  top: 0;
+}
+.teachercheckon .line hr {
+  transform: rotate(90deg);
+  position: absolute;
+  border: 0.5px solid #A9A9A9;
+  left: -110%;
+}
+.teachercheckon .line hr:nth-child(1) {
+  width: 400px;
+}
+.teachercheckon .line hr:nth-child(3) {
+  width: 800px;
+  top: 780px;
+  left: -310px;
+}
+.teachercheckon .line hr:nth-child(5) {
+  width: 1300px;
+  top: 2010px;
+  left: -560px;
+}
+.teachercheckon .line .imgcontainer {
+  width: 180px;
+  height: 180px;
+  border-radius: 90px;
+  position: absolute;
+  top: 200px;
+}
+.teachercheckon .line .imgcontainer .zhezhaoceng,
+.teachercheckon .line .imgcontainer img {
+  background: rgba(245, 245, 245, 0.6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 90px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 180px;
+  color: #696969;
+}
+.teachercheckon .line .img2 {
+  top: 1180px;
+}
+.teachercheckon .line .img2 .zhezhaoceng,
+.teachercheckon .line .img2 img {
+  background: rgba(245, 245, 245, 0);
+}
+.teachercheckon .dagougou {
+  width: 400px;
+  margin-left: 470px;
+}
+.teachercheckon .dagougou ul:nth-child(3) {
+  margin-top: 190px;
+}
+.teachercheckon .dagougou button {
+  margin-left: 200px;
+  margin-top: 30px;
+}
+.teachercheckon .fuzelaoshi {
+  margin-left: 200px;
+  margin-top: 90px;
+  font-size: 16px;
+  color: #A9A9A9;
+}
+</style><style type="text/css">.pcteacherplan {
+  overflow: auto;
+}
+.pcteacherplan .nav {
+  float: right;
+}
+.pcteacherplan .weekaims {
+  width: 100%;
+  overflow: auto;
+  margin-top: 50px;
+  display: inline-block;
+}
+.pcteacherplan .weekaims .banyuan {
+  width: 100px;
+  height: 50px;
+  margin: 0 auto;
+  border-radius: 50px 50px 0 0;
+  background: #70c7d2;
+  text-align: center;
+  color: white;
+  line-height: 50px;
+}
+.pcteacherplan .weekaims hr {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.pcteacherplan .weekaims .plandiv {
+  width: 500px;
+  height: 200px;
+  float: left;
+  background: #70c7d2;
+  margin-right: 15px;
+  margin-top: 15px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 40px;
+}
+.pcteacherplan .weekaims .d1,
+.pcteacherplan .weekaims .d3 {
+  margin-left: 130px;
+}
+.pcteacherplan .weekaims .d1,
+.pcteacherplan .weekaims .d4 {
+  background: #d28386;
+}
+.pcteacherplan .weekaims .d2 {
+  background: #3e424e;
+}
+.pcteacherplan .weekaims .plandiv:before {
+  content: '';
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 20px solid white;
+  position: absolute;
+  left: 375px;
+  top: 366px;
+}
+.pcteacherplan .weekaims .plandiv:after {
+  content: '';
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 20px solid #d28386;
+  position: absolute;
+  left: 627px;
+  top: 280px;
+}
+.pcteacherplan .weekaims .d2:before {
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 20px solid white;
+  left: 645px;
+  top: 280px;
+}
+.pcteacherplan .weekaims .d2:after {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 20px solid #3e424e;
+  left: 900px;
+  top: 383px;
+}
+.pcteacherplan .weekaims .d3:before {
+  border-bottom-color: #70c7d2;
+  top: 386px;
+}
+.pcteacherplan .weekaims .d3:after {
+  border-right: 20px solid white;
+  border-left-width: 0;
+  left: 610px;
+  top: 505px;
+}
+.pcteacherplan .weekaims .d4:before {
+  border-right: 20px solid #d28386;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left-width: 0;
+  left: 625px;
+  top: 505px;
+}
+.pcteacherplan .weekaims .d4:after {
+  border-top: 20px solid white;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  left: 900px;
+  top: 401px;
+}
+.pcteacherplan .weekplan {
+  width: 100%;
+  margin-top: 90px;
+}
+.pcteacherplan .weekplan p:nth-child(1) {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 60px;
+}
+.pcteacherplan .weekplan ul:nth-child(2) {
+  list-style: none;
+  width: 60%;
+  margin: 0 auto;
+}
+.pcteacherplan .weekplan ul:nth-child(2) li {
+  margin-bottom: 60px;
+}
+.pcteacherplan .weekplan ul:nth-child(2) li i {
+  font-size: 60px;
+  float: left;
+  margin-right: 40px;
+}
+.pcteacherplan .weekplan ul:nth-child(2) p:nth-child(2) {
+  font-weight: bolder;
+  font-size: 20px;
+}
+.pcteacherplan .lastweek {
+  width: 75%;
+  margin: 80px auto 150px;
+  overflow: auto;
+}
+.pcteacherplan .lastweek .title {
+  width: 100%;
+  height: 40px;
+  background: #f4f5f7;
+  font-size: 12px;
+  color: #b9babe;
+  text-indent: 2em;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  align-items: center;
+}
+.pcteacherplan .lastweek .six {
+  width: 355px;
+  height: 355px;
+  background: white;
+  border: 1px solid #b9babe;
+  border-radius: 10px;
+  float: left;
+  margin-right: 50px;
+  margin-left: 20px;
+}
+.pcteacherplan .lastweek .six select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 1px solid #b9babe;
+  border-radius: 0;
+  background-color: white;
+}
+.pcteacherplan .lastweek .six select:nth-child(2) {
+  width: 65px;
+  margin-left: 25px;
+}
+.pcteacherplan .lastweek .six select:nth-child(3) {
+  width: 85px;
+  text-indent: 2em;
+}
+.pcteacherplan .lastweek .six select:nth-child(4) {
+  width: 75px;
+}
+.pcteacherplan .lastweek .six input {
+  width: 65px;
+  border: 1px solid #b9babe;
+  border-radius: 0;
+  background-color: white;
+}
+.pcteacherplan .lastweek .six hr {
+  width: 305px;
+  height: 1px;
+  margin: 10px 25px 0;
+  background: #3e8bb5;
+  border: none;
+}
+.pcteacherplan .lastweek .six table {
+  margin-left: 25px;
+  width: 86%;
+  font-size: 12px;
+  border-collapse: separate;
+  border-spacing: 0px 3px;
+}
+.pcteacherplan .lastweek .six table th {
+  height: 30px;
+  border-bottom: 1px solid #b9babe;
+}
+.pcteacherplan .lastweek .six table tbody td {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+.pcteacherplan .lastweek .six p {
+  color: red;
+}
+.pcteacherplan .lastweek .six span {
+  color: black;
+}
+.pcteacherplan .lastweek .six .fes p {
+  color: black;
+}
+.pcteacherplan .lastweek .six .fes span {
+  color: red;
+}
+.pcteacherplan .lastweek .six .spe {
+  width: 38px;
+  height: 38px;
+  border: 1px solid #e0cb52;
+}
+.pcteacherplan .lastweek .six table td:hover {
+  width: 38px;
+  height: 38px;
+  border: 1px solid #e0cb52;
+}
+.pcteacherplan .lastweek .seven {
+  width: 520px;
+  height: 355px;
+  background: white;
+  border: 1px solid #b9babe;
+  border-radius: 10px;
+  float: left;
+}
+.pcteacherplan .lastweek .seven .pm {
+  width: 450px;
+  height: 280px;
+  margin: 15px 35px;
+  /*background:#298abe;*/
+  text-align: center;
+  border-right: 1px solid #b9babe;
+  font-size: 12px;
+}
+.pcteacherplan .lastweek .seven .pm th,
+.pcteacherplan .lastweek .seven .pm td {
+  border-left: 1px solid #b9babe;
+  border-top: 1px solid #b9babe;
+}
+.pcteacherplan .lastweek .seven .pm tr td:nth-child(1) {
+  width: 65px;
+}
+.pcteacherplan .lastweek .seven .pm tr td:nth-child(2) {
+  width: 90px;
+}
+.pcteacherplan .lastweek .seven table td > div {
+  display: inline-block;
+  width: 165px;
+  height: 3px;
+  background: #b9babe;
+  position: relative;
+  left: 3%;
+}
+.pcteacherplan .lastweek .seven table td > div div {
+  width: 140px;
+  height: 100%;
+  background: #81caed;
+}
+.pcteacherplan .lastweek .seven table tr:nth-child(2) div div {
+  background: #eb6e55;
+}
+.pcteacherplan .lastweek .seven table tr:nth-child(2) {
+  background: #eee;
+}
+.pcteacherplan .lastweek .seven table tr:nth-child(3) div div {
+  background: #ed8155;
+}
+.pcteacherplan .lastweek .seven table tr:nth-child(4) div div {
+  background: #ef9c55;
+}
+.pcteacherplan .lastweek .seven table tr:hover {
+  background: #eee;
+}
+</style><style type="text/css">.pcteachactive .two {
+  width: 100%;
+  height: 945px;
+  /*background:#e65253;*/
+  margin: 0;
+}
+.pcteachactive .two_first {
+  width: 100%;
+  height: 340px;
+  /*background:black;*/
+  position: relative;
+}
+.pcteachactive .two_first img {
+  width: 100%;
+  height: 340px;
+  position: absolute;
+  z-index: -1;
+}
+.pcteachactive .two_first p {
+  color: white;
+}
+.pcteachactive .two_first_content {
+  width: 83%;
+  height: 40%;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 40%;
+  text-align: center;
+}
+.pcteachactive .two_first_content p:nth-child(1) {
+  font-size: 22px;
+  margin-bottom: 7px;
+}
+.pcteachactive .two_first_content hr {
+  width: 3%;
+  height: 2px;
+  background: white;
+  border: none;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+.pcteachactive .two_first_content p:nth-child(3) {
+  font-size: 13px;
+  opacity: 0.7;
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+.pcteachactive .two_first_content form {
+  height: 30%;
+}
+.pcteachactive .two_first_content select {
+  /*display:block;
+    float:left;*/
+  width: 21%;
+  height: 100%;
+  margin: 15px;
+  padding: 0 14px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0;
+  border: none;
+  color: gray;
+}
+.pcteachactive .two_first_content input {
+  width: 21%;
+  height: 100%;
+  background: #be4e48;
+  color: white;
+  border: none;
+  font-size: 15px;
+  letter-spacing: 25px;
+  text-align: center;
+}
+.pcteachactive .two_second {
+  width: 100%;
+  height: 605px;
+  /*background:black;*/
+  position: relative;
+  background: #f8f8f8;
+  padding: 0 10%;
+}
+.pcteachactive .tsdiv {
+  float: left;
+  width: 22%;
+  height: 70%;
+  margin: 10% 0 0;
+  position: relative;
+  text-align: center;
+}
+.pcteachactive .two_second_one,
+.pcteachactive .two_second_two,
+.pcteachactive .two_second_three {
+  margin-right: 3%;
+}
+.pcteachactive .tsdiv div {
+  width: 100%;
+  height: 80%;
+  border: 1px solid #eee;
+  background: white;
+  position: relative;
+}
+.pcteachactive .tsdiv div img {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+.pcteachactive .tsdiv p:nth-child(2) {
+  margin: 3% 0;
+  font-size: 15px;
+  opacity: 0.8;
+}
+.pcteachactive .tsdiv p:nth-child(3) {
+  font-size: 10px;
+  color: gray;
+  opacity: 0.8;
+}
+.pcteachactive .two_second_two p:nth-child(1) {
+  font-size: 25px;
+  letter-spacing: 30px;
+  opacity: 0.7;
+  position: relative;
+  left: 8px;
+}
+.pcteachactive .two_second_two p:nth-child(2) {
+  font-size: 10px;
+  color: gray;
+  opacity: 0.8;
+  margin-bottom: 2%;
+  margin-top: 0;
+}
+.pcteachactive .lunbo {
+  width: 100%;
+  height: 1085px;
+  margin: 0;
+}
+.pcteachactive .three_top {
+  width: 100%;
+  height: 565px;
+  /*background:white;*/
+}
+.pcteachactive .three_top img {
+  width: 100%;
+  height: 565px;
+}
+.pcteachactive .three_bottom {
+  width: 100%;
+  height: 520px;
+  /*background:gray;*/
+  display: box;
+  display: -webkit-box;
+}
+.pcteachactive .three_bottom_one,
+.pcteachactive .three_bottom_two,
+.pcteachactive .three_bottom_three {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.pcteachactive .three_bottom_three {
+  width: 430px;
+  height: 100%;
+  position: relative;
+}
+.pcteachactive .three_bottom_three img {
+  height: 100%;
+  width: 100%;
+}
+.pcteachactive .three_bottom_one,
+.pcteachactive .three_bottom_two {
+  box-flex: 1;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.pcteachactive .three_bottom_one div,
+.pcteachactive .three_bottom_two div {
+  width: 60%;
+}
+.pcteachactive .three_bottom_one div p,
+.pcteachactive .three_bottom_two div p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.pcteachactive .three_bottom_one div hr,
+.pcteachactive .three_bottom_two div hr {
+  width: 30px;
+  height: 2px;
+  position: relative;
+  left: 40%;
+  margin-bottom: 30px;
+}
+.pcteachactive .three_bottom_one div input,
+.pcteachactive .three_bottom_two div input {
+  width: 65%;
+  height: 20%;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 0;
+}
+.pcteachactive .three_bottom_one {
+  background: #e65253;
+  color: white;
+}
+.pcteachactive .three_bottom_one hr {
+  background: white;
+  border: white;
+}
+.pcteachactive .three_bottom_one input {
+  color: white;
+  background: #e65253;
+  border: 1px solid white;
+}
+.pcteachactive .three_bottom_two {
+  color: rgba(0, 0, 0, 0.7);
+}
+.pcteachactive .three_bottom_two hr {
+  background: gray;
+  border: gray;
+}
+.pcteachactive .three_bottom_two input {
+  color: #e65253;
+  background: white;
+  border: 1px solid #e65253;
+}
+.pcteachactive .three_bottom_three div {
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 0;
+  top: 47.5%;
+  border-top: 14px solid transparent;
+  border-left: 28px solid white;
+  border-bottom: 14px solid transparent;
+}
+</style><style type="text/css">.pcteachnotice {
+  height: 100%;
+  overflow: auto;
+  background: #afb9d4;
+}
+.pcteachnotice .nav {
+  float: right;
+}
+.pcteachnotice .pcteachnotice {
+  width: 70%;
+  height: 570px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+.pcteachnotice .pcteachnotice .ant-card {
+  width: 70%;
+  margin: 30px auto;
+}
+.pcteachnotice .pcteachnotice .ant-card-head {
+  background: #8a9acf;
+}
+.pcteachnotice .pcteachnotice .ant-card-head .ant-card-head-title {
+  color: white;
+}
+.pcteachnotice .pcteachnotice img {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  margin-left: 82%;
+}
+.pcteachnotice .pcteachnotice img:last-child {
+  margin-left: 10%;
+}
+</style><style type="text/css">.jutitongzhi {
+  text-align: center;
+  overflow: auto;
+}
+.jutitongzhi .nav {
+  float: right;
+}
+.jutitongzhi h2 {
+  margin-top: 100px;
+}
+.jutitongzhi hr {
+  width: 80%;
+  margin: 0 auto 40px;
+}
+.jutitongzhi p {
+  width: 70%;
+  margin: 0 auto;
+  text-align: left;
+}
+.jutitongzhi p:last-child {
+  text-align: right;
+  margin-top: 100px;
+}
+</style><style type="text/css">.pcpaymentxfcx {
+  overflow: auto;
+}
+.pcpaymentxfcx .nav {
+  float: right;
+}
+.pcpaymentxfcx section {
+  width: 80%;
+  margin: 100px auto;
+}
+</style><style type="text/css">.pcpaymentsjcx {
+  overflow: auto;
+}
+.pcpaymentsjcx .nav {
+  float: right;
+}
+.pcpaymentsjcx section {
+  width: 80%;
+  margin: 100px auto;
+}
+</style><style type="text/css">.pcpaymentjf {
+  overflow: auto;
+}
+.pcpaymentjf .nav {
+  float: right;
+}
+.pcpaymentjf section {
+  width: 80%;
+  margin: 100px auto;
+  text-align: center;
+}
+.pcpaymentjf .ant-spin-nested-loading {
+  margin-top: 40px;
+}
+</style><style type="text/css">.pcdocumentacheivement {
+  overflow: auto;
+}
+.pcdocumentacheivement .nav {
+  float: right;
+}
+.pcdocumentacheivement section {
+  width: 80%;
+  margin: 100px auto;
+}
+.hasntLoginp {
+  text-align: center;
+  margin-top: 70px;
+}
+</style><style type="text/css">#app,
+.main {
+  height: 100%;
+}
+.mobilehome {
+  width: 100%;
+  height: 100%;
+}
+.mobilehome .homebackground {
+  background-image: url('https://i.loli.net/2018/03/20/5ab061d30404e.jpeg');
+  width: 100%;
+  height: 100%;
+}
+.mobilehome .mobilecoverbody {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: -webkit-linear-gradient(left, #8b8386, rgba(235, 235, 235, 0.6));
+  background: -o-linear-gradient(left, #8b8386, rgba(235, 235, 235, 0.6));
+  background: -moz-linear-gradient(left, #8b8386, rgba(235, 235, 235, 0.6));
+  background: linear-gradient(left, #8b8386, rgba(235, 235, 235, 0.6));
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 30%;
+  font-family: "Sans-serif";
+}
+.mobilehome .mobilecoverbody h1 {
+  color: #fff;
+  font-size: 45px;
+}
+.mobilehome .mobilecoverbody p {
+  text-align: center;
+  color: #fff;
+}
+.mobilehome .mobileheadimage {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+}
+.mobilehome .mobileheadimage i {
+  font-size: 50px;
+  color: white;
+}
+.mobilehome .mobilefooter {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+}
+.mobilehome .mobilefooter ul {
+  list-style: none;
+  width: 100%;
+  height: 80%;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+.mobilehome .mobilefooter li {
+  float: left;
+  width: 25%;
+  height: 100%;
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  text-align: center;
+  font-size: 25px;
+  color: #ffffff;
+  font-weight: lighter;
+  padding-top: 10px;
+}
+.mobilehome .mobilefooter li a {
+  color: #ffffff;
+}
+.mobilehome .mobilefooter .lastli {
+  border-right: none;
+}
+.mobilehome .mobileloginicon {
+  position: fixed;
+  top: 15px;
+  right: 10px;
+}
+.mobilehome .mobileloginicon a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.mobilehome .mobileloginicon i {
+  color: white;
+  font-size: 22px;
+}
+</style><style type="text/css">.mobilenav li {
+  width: 25% !important;
+}
+.mobilenav button {
+  background: transparent;
+  color: white;
+  width: 150px;
+  height: 40px;
+  margin: 0 auto;
+  display: block;
+}
+</style><style type="text/css">.mobilelogin {
+  width: 100%;
+  height: 100%;
+}
+.mobilelogin .beijing {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.mobilelogin .nav {
+  float: right;
+}
+.mobilelogin .zhezhaoceng {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(211, 211, 211, 0.5);
+}
+.mobilelogin .loginpage {
+  width: 100%;
+  height: 350px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+}
+.mobilelogin .loginpage input {
+  width: 80%;
+  margin-bottom: 35px;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  background: #5080a5;
+  box-shadow: 0 0 15px #eee;
+  text-indent: 35px;
+}
+.mobilelogin .loginpage ::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+.mobilelogin .loginpage button {
+  width: 75%;
+  height: 50px;
+  border: 1px solid white;
+  background: white;
+  color: white;
+  border-radius: 10px;
+  outline: none;
+  background: transparent;
+}
+.mobilelogin .loginpage i {
+  font-size: 40px;
+  color: white;
+}
+.mobilelogin .loginpage .small {
+  font-size: 16px;
+  position: relative;
+  left: 25px;
+}
+.mobilelogin .loginpage p {
+  font-size: 20px;
+  color: white;
+}
+.mobilelogin .backtohome:after {
+  border-right-color: #0c6391;
+}
+.backtohome {
+  position: fixed;
+  top: 15px;
+  left: 10px;
+}
+.backtohome:before,
+.backtohome:after {
+  content: ' ';
+  border: 10px solid transparent;
+  border-right: 10px solid white;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 4px;
+  left: -4px;
+}
+.backtohome:after {
+  border-right-color: white;
+  left: -2px;
+}
+</style><style type="text/css">.mobileMonitorContainer {
+  background: url('/img/mobilelogin.jpeg');
+  background-size: 100% 100%;
+}
+.mobileMonitorContainer .videocontainer {
+  width: 96%;
+  height: 200px;
+  margin: auto;
+  position: static;
+}
+.mobileMonitorContainer .videocontainer video {
+  object-fit: fill;
+}
+.mobileMonitorContainer .monitortitle {
+  font-size: 25px;
+  margin: 70px auto 50px;
+  border-bottom: 2px solid #001529;
+  width: 100px;
+}
+.mobileMonitorContainer .backtohome:after {
+  border-right-color: #b0c3ca;
+}
+</style><style type="text/css">.mobileparentcheckom {
+  background: none;
+}
+.mobileparentcheckom .two {
+  width: 100%;
+  height: 60px;
+  margin: 100px auto 100px;
+}
+.mobileparentcheckom .two ul li:nth-child(1),
+.mobileparentcheckom .two ul li:nth-child(8) {
+  width: 107px;
+  margin-left: 12px;
+}
+.mobileparentcheckom .three li {
+  float: none;
+  margin: 5px auto;
+}
+.mobileparentcheckom .three {
+  width: 100%;
+  height: 320px;
+}
+.mobileparentcheckom .three p:nth-child(1) {
+  text-indent: 40px;
+}
+.mobileparentcheckom .backtohome:before {
+  border-right-color: #001529;
+}
+</style><style type="text/css">.mobilejf section {
+  width: 100%;
+  margin: 100px auto;
+}
+.mobilejf .ant-spin-nested-loading {
+  margin-top: 70px;
+}
+.mobilejf .backtohome:before {
+  border-right-color: #001529;
+}
+</style><style type="text/css">.mobileteachercheckon .dagougou {
+  width: 70%;
+  margin-left: 20%;
+}
+.mobileteachercheckon .backtohome:before {
+  border-right-color: #001529;
+}
+.mobileteachercheckon .backtohome {
+  position: absolute;
+}
+</style><style type="text/css">.mobileteacherxx .ant-table-wrapper {
+  width: 100% !important;
+}
+.mobileteacherxx .title {
+  text-align: center;
+  margin-top: 15px;
+}
+.mobileteacherxx .backtohome {
+  position: absolute;
+}
+.mobileteacherxx .backtohome:after {
+  border-right-color: #d54635;
+}
+.mobileteacherxx .threetable {
+  background: #e3c3ad;
+}
+.mobileteacherxx .fourtable {
+  background: #c7dbe5;
+}
+</style><style type="text/css">.mobileteacherplan .weekplan {
+  width: 100%;
+  margin-top: 0;
+}
+.mobileteacherplan .weekplan ul:nth-child(1) {
+  list-style: none;
+  width: 75%;
+  margin: 0 auto;
+}
+.mobileteacherplan .weekplan ul:nth-child(1) li {
+  margin-bottom: 60px;
+}
+.mobileteacherplan .weekplan ul:nth-child(1) li i {
+  font-size: 60px;
+  float: left;
+  margin-right: 40px;
+}
+.mobileteacherplan .weekplan ul:nth-child(1) p:nth-child(2) {
+  font-weight: bolder;
+  font-size: 20px;
+}
+.mobileteacherplan .weekplan ul:nth-child(1) p:nth-child(3) {
+  overflow: auto;
+}
+.mobileteacherplan .seven {
+  width: 100% !important;
+  height: 260px !important;
+}
+.mobileteacherplan .lastweek {
+  width: 100%;
+  margin: 80px auto 50px;
+}
+.mobileteacherplan .pm {
+  width: 96% !important;
+  height: 180px !important;
+  margin: 15px auto !important;
+}
+.mobileteacherplan .backtohome:before {
+  border-right-color: #001529;
+}
+.mobileteacherplan .backtohome {
+  position: absolute;
+}
+</style><style type="text/css">.mobilenotice {
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  background: url('/img/k3.jpeg');
+  background-size: 100% 100%;
+}
+.mobilenotice ul {
+  text-align: center;
+  list-style: none;
+  padding-top: 30px;
+  color: #FFD700;
+  margin-top: 90px;
+}
+.mobilenotice ul span {
+  font-size: 25px;
+  margin-bottom: 40px;
+  display: inline-block;
+}
+.mobilenotice ul li {
+  margin-bottom: 10px;
+  font-weight: lighter;
+  font-size: 16px;
+}
+.mobilenotice ul a {
+  color: #FFD700;
+}
+.mobilenotice .backtohome:after {
+  border-right-color: #181913;
+}
+</style><style type="text/css">.mobilecontent h2 {
+  margin-top: 80px;
+  font-size: 17px;
+}
+.mobilecontent .backtohome:before {
+  border-right-color: #001529;
+}
+.mobilecontent .backtohome {
+  position: absolute;
+}
+</style><script type="text/javascript" async="" src="./幼教平台_files/mixpanel-2-latest.min.js"></script></head>
+<body>
+    <div id="app"><div class="main"><div class="main"><section class="PCMonitorContainer mobileMonitorContainer"><a href="http://localhost:8080/"><div class="backtohome"></div></a><p class="monitortitle">实时监控</p><div class="videocontainer"><video src="/video/shishi1.mp4" controls="" autoplay=""><source src="/video/shishi1.mp4" type="video/mp4"></video></div></section></div></div></div>
+    <script src="./幼教平台_files/app.js"></script>
+    <script src="./幼教平台_files/vendor.js"></script>
+
+</body></html>

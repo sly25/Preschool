@@ -1,0 +1,114 @@
+#app,.main {
+  height: 100%;
+}
+.mobilehome{
+  width: 100%;
+  height: 100%;
+  .homebackground {
+    background-image: url('/img/对比色.jpeg');
+    width:100%;
+    height: 100%;
+  }
+  .mobilecoverbody {
+    width:100%;
+    height:100%;
+    position:absolute;
+    left: 0;
+    top: 0;
+    background:-webkit-linear-gradient(left,rgb(139,131,134),rgba(235,235,235,0.6));
+    background:-o-linear-gradient(left,rgb(139,131,134),rgba(235,235,235,0.6));
+    background:-moz-linear-gradient(left,rgb(139,131,134),rgba(235,235,235,0.6));
+    background:linear-gradient(left,rgb(139,131,134),rgba(235,235,235,0.6));
+    display:flex;
+    display: -webkit-flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top:30%;
+    font-family: "Sans-serif";
+    h1 {
+      color: #fff;
+      font-size: 45px;
+    }
+    p {
+      text-align: center;
+      color: #fff;
+    }
+  }
+  .mobileheadimage {
+    width:50px;
+    height:50px;
+    //border-radius: 50px;
+    overflow: hidden;
+    i {
+      font-size: 50px;
+      color: white;
+    }
+  }
+  .mobilefooter {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:70px;
+    ul {
+      list-style: none;
+      width:100%;
+      height:80%;
+      padding:0;
+      margin:0;
+      text-decoration: none;
+    }
+    li {
+      float: left;
+      width: 25%;
+      height:100%;
+      border-right:1px solid rgba(255,255,255,0.5);
+      text-align: center;
+      font-size:25px;
+      color:#ffffff;
+      font-weight: lighter;
+      padding-top: 10px;
+      a {
+        color:#ffffff;
+      }
+    }
+    .lastli {
+      border-right: none;
+    }
+  }
+  .mobileloginicon{
+    position: fixed;
+    top: 15px;
+    right: 10px;
+    a {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+    }
+    i {
+      color: white;
+      font-size: 22px;
+    }
+  }
+  //.backtologin:after {
+  //  border-left-color: #909299;
+  //}
+}
+//.backtologin {
+//  position: fixed;
+//  top: 15px;
+//  right: 10px;
+//}
+//.backtologin:before,.backtologin:after {
+//  content: ' ';
+//  border: 10px solid transparent;
+//  border-left: 10px solid white;
+//  width: 0;
+//  height: 0;
+//  position:absolute;
+//  top: 4px;
+//  left: -4px;
+//}
+//.backtologin:after {
+//  border-left-color: white;
+//  left: -2px;
+//}
